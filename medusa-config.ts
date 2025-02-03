@@ -27,13 +27,13 @@ const modules = {
       },
     },
   },
-  fileService: {
-    resolve: "@medusajs/medusa/file",
+  [Modules.FILE]: {
+    resolve: '@medusajs/medusa/file',
     options: {
       providers: [
         {
-          resolve: "@medusajs/medusa/file-s3",
-          id: "s3",
+          resolve: '@medusajs/file-s3',
+          id: 's3',
           options: {
             file_url: process.env.S3_FILE_URL,
             access_key_id: process.env.S3_ACCESS_KEY_ID,
@@ -46,6 +46,7 @@ const modules = {
       ],
     },
   },
+
 };
 
 module.exports = defineConfig({

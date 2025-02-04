@@ -32,6 +32,12 @@ module.exports = defineConfig({
 
               endpoint: process.env.S3_ENDPOINT,
 
+              additional_client_config: {
+
+                forcePathStyle: true,
+
+              },
+
               // other options...
 
             },

@@ -32,16 +32,6 @@ module.exports = defineConfig({
 
               endpoint: process.env.S3_ENDPOINT,
 
-              additional_client_config: {
-
-                forcePathStyle: true,
-
-              },
-
-              cache_control: "max-age=31536000",
-
-              download_url_duration: 60 * 60 * 24, // 24 hours
-
               // other options...
 
             },
